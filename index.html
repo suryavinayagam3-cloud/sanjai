@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Sanjai | Full-Stack Developer & Software Engineer</title>
+  <meta name="description" content="Portfolio of Sanjai - Full-Stack Developer specializing in modern web applications, scalable backends, React, TypeScript, Node.js, and cloud systems." />
+  <meta name="author" content="Sanjai" />
+  <meta name="keywords" content="Sanjai, Full-Stack Developer, Software Engineer, React, Node.js, TypeScript, Portfolio, Web Developer" />
+
+  <!-- Open Graph / Meta for Social Sharing -->
+  <meta property="og:title" content="Sanjai | Full-Stack Developer" />
+  <meta property="og:description" content="Explore selected projects, technical skills, and experience in building resilient, high-performance web systems." />
+  <meta property="og:type" content="website" />
+
+  <!-- SVG Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%236366f1'/><text x='50%' y='55%' dominant-baseline='central' text-anchor='middle' fill='%23ffffff' font-family='monospace' font-weight='900' font-size='56'>S</text></svg>" />
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Sanjai Portfolio Home">
+        <div class="brand-icon">S</div>
+        <span>Sanjai<span class="gradient-text">.dev</span></span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="nav-links" id="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & CTA) -->
+      <div class="nav-actions">
+        <!-- Light/Dark Mode Switcher -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light and dark color mode" title="Toggle theme">
+          <!-- Moon Icon (Dark Mode) -->
+          <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <!-- Sun Icon (Light Mode) -->
+          <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+
+        <a href="#contact" class="btn btn-sm btn-primary">Hire Me</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Open mobile navigation" aria-expanded="false">
+          <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <!-- Availability Badge -->
+            <div class="status-badge">
+              <span class="pulse-dot"></span>
+              <span>Available for New Projects & Roles</span>
+            </div>
+
+            <p class="hero-greeting">Hi there, my name is</p>
+            <h1 class="hero-title">
+              Sanjai <span class="gradient-text">.</span>
+            </h1>
+
+            <div class="hero-role-wrapper">
+              <span class="hero-role" id="hero-role-text">Full-Stack Developer</span>
+            </div>
+
+            <p class="hero-description">
+              I architect and craft scalable, accessible, and delightful digital products. Bridging the gap between intuitive user experiences and resilient, high-throughput backend infrastructure.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <span>Explore Projects</span>
+                <svg class="btn-icon" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <span>Get in Touch</span>
+              </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links">
+              <!-- GitHub -->
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub">
+                <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <!-- Twitter / X -->
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Twitter / X" aria-label="Twitter">
+                <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <!-- Direct Mail -->
+              <a href="mailto:sanjai.developer@example.com" class="social-link" title="Send Email" aria-label="Email">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Developer Code Card -->
+          <div class="hero-visual">
+            <div class="code-window">
+              <div class="code-header">
+                <div class="window-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <span class="window-title">developer.config.ts</span>
+                <span style="width: 30px;"></span>
+              </div>
+              <pre class="code-body"><code><span class="code-line"><span class="syn-keyword">const</span> <span class="syn-var">engineer</span> = {</span>
+<span class="code-line">  <span class="syn-prop">name</span>: <span class="syn-string">'Sanjai'</span>,</span>
+<span class="code-line">  <span class="syn-prop">title</span>: <span class="syn-string">'Full-Stack Developer'</span>,</span>
+<span class="code-line">  <span class="syn-prop">coreFocus</span>: [</span>
+<span class="code-line">    <span class="syn-string">'Clean Architecture'</span>,</span>
+<span class="code-line">    <span class="syn-string">'Distributed Backend'</span>,</span>
+<span class="code-line">    <span class="syn-string">'High-Speed Web UIs'</span></span>
+<span class="code-line">  ],</span>
+<span class="code-line">  <span class="syn-prop">favoriteStack</span>: {</span>
+<span class="code-line">    <span class="syn-prop">client</span>: <span class="syn-string">'React / Next.js / TypeScript'</span>,</span>
+<span class="code-line">    <span class="syn-prop">server</span>: <span class="syn-string">'Node.js / Express / Python'</span>,</span>
+<span class="code-line">    <span class="syn-prop">storage</span>: <span class="syn-string">'PostgreSQL / Redis / S3'</span></span>
+<span class="code-line">  },</span>
+<span class="code-line">  <span class="syn-prop">problemSolving</span>: <span class="syn-bool">true</span>,</span>
+<span class="code-line">  <span class="syn-prop">status</span>: <span class="syn-string">'Ready to ship value 🚀'</span></span>
+<span class="code-line">};</span></code></pre>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         STATS STRIP
+         ========================================================================== -->
+    <div class="stats-strip">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-number" data-target="4" data-suffix="+">0</span>
+            <span class="stat-label">Years of Experience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="25" data-suffix="+">0</span>
+            <span class="stat-label">Completed Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="99.9" data-suffix="%">0</span>
+            <span class="stat-label">System Reliability</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="16" data-suffix="+">0</span>
+            <span class="stat-label">Technologies Mastered</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         ABOUT SECTION
+         ========================================================================== -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Turning Complex Problems into Elegant Software</h2>
+          <p class="section-subtitle">A quick introduction into how I work, my background, and what drives my engineering practice.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am a dedicated <strong>Full-Stack Developer</strong> with an obsession for elegant design, performant code, and seamless developer ergonomics. Over the past 4+ years, I have architected and deployed applications ranging from real-time analytics platforms to distributed cloud services.
+            </p>
+            <p>
+              I believe great software lives at the intersection of <strong>meticulous craftsmanship</strong> and <strong>pragmatic problem-solving</strong>. Whether fine-tuning database indexing for high RPS or polishing CSS transitions for fluid 60 FPS interfaces, I pay attention to every detail.
+            </p>
+            <p>
+              When I'm not writing code, I explore open-source projects, learn new architectural patterns, and experiment with AI integration workflows.
+            </p>
+
+            <div class="about-features">
+              <div class="feature-box">
+                <div class="feature-icon-wrapper">
+                  <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                </div>
+                <h4>Full-Stack Prowess</h4>
+                <p>Complete confidence from database schema design to responsive UI rendering.</p>
+              </div>
+
+              <div class="feature-box">
+                <div class="feature-icon-wrapper">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                </div>
+                <h4>Performance First</h4>
+                <p>Fast query times, sub-second TTFB, optimized assets, and zero layout shift.</p>
+              </div>
+
+              <div class="feature-box">
+                <div class="feature-icon-wrapper">
+                  <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                </div>
+                <h4>Clean & Secure</h4>
+                <p>Security-conscious code, JWT/OAuth auth flows, sanitization, and best practices.</p>
+              </div>
+
+              <div class="feature-box">
+                <div class="feature-icon-wrapper">
+                  <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                </div>
+                <h4>Collaborative</h4>
+                <p>Effective communicator, thorough documentation writer, and supportive teammate.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight Card -->
+          <div class="about-visual-card">
+            <div class="about-card-header">
+              <div class="avatar-placeholder">S</div>
+              <div class="about-header-meta">
+                <h3>Sanjai</h3>
+                <p>Full-Stack Software Engineer</p>
+              </div>
+            </div>
+
+            <div class="about-info-list">
+              <div class="about-info-item">
+                <span class="info-label">
+                  <svg style="width:16px;height:16px;stroke:currentColor;fill:none;" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  Location
+                </span>
+                <span class="info-value">Available Worldwide / Remote</span>
+              </div>
+
+              <div class="about-info-item">
+                <span class="info-label">
+                  <svg style="width:16px;height:16px;stroke:currentColor;fill:none;" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                  Role
+                </span>
+                <span class="info-value">Full-Stack / Backend / Frontend</span>
+              </div>
+
+              <div class="about-info-item">
+                <span class="info-label">
+                  <svg style="width:16px;height:16px;stroke:currentColor;fill:none;" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                  Education
+                </span>
+                <span class="info-value">B.S. in Computer Science</span>
+              </div>
+
+              <div class="about-info-item">
+                <span class="info-label">
+                  <svg style="width:16px;height:16px;stroke:currentColor;fill:none;" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  Availability
+                </span>
+                <span class="info-value" style="color:var(--success);">Immediate</span>
+              </div>
+
+              <div class="about-info-item">
+                <span class="info-label">
+                  <svg style="width:16px;height:16px;stroke:currentColor;fill:none;" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  Email
+                </span>
+                <span class="info-value">sanjai.developer@example.com</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+              <a href="#contact" class="btn btn-secondary" style="width: 100%;">
+                <span>Schedule a Chat</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SKILLS SECTION
+         ========================================================================== -->
+    <section id="skills" style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Tech Stack</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">A curated toolbox of modern languages, frameworks, databases, and DevOps utilities I use daily.</p>
+        </div>
+
+        <div class="skills-categories">
+          
+          <!-- Category: Frontend -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <h3>Frontend Development</h3>
+            </div>
+            <div class="skills-tags-wrap">
+              <span class="skill-pill">React.js</span>
+              <span class="skill-pill">Next.js</span>
+              <span class="skill-pill">TypeScript</span>
+              <span class="skill-pill">JavaScript (ES6+)</span>
+              <span class="skill-pill">Tailwind CSS</span>
+              <span class="skill-pill">HTML5 & CSS3</span>
+              <span class="skill-pill">Redux / Zustand</span>
+              <span class="skill-pill">Vite</span>
+              <span class="skill-pill">Responsive Design</span>
+              <span class="skill-pill">Accessibility (a11y)</span>
+            </div>
+          </div>
+
+          <!-- Category: Backend -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+              </div>
+              <h3>Backend & APIs</h3>
+            </div>
+            <div class="skills-tags-wrap">
+              <span class="skill-pill">Node.js</span>
+              <span class="skill-pill">Express.js</span>
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">FastAPI</span>
+              <span class="skill-pill">RESTful APIs</span>
+              <span class="skill-pill">GraphQL</span>
+              <span class="skill-pill">WebSockets</span>
+              <span class="skill-pill">Microservices</span>
+              <span class="skill-pill">JWT & OAuth 2.0</span>
+            </div>
+          </div>
+
+          <!-- Category: Database & Cloud -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <h3>Databases & Storage</h3>
+            </div>
+            <div class="skills-tags-wrap">
+              <span class="skill-pill">PostgreSQL</span>
+              <span class="skill-pill">MongoDB</span>
+              <span class="skill-pill">Redis</span>
+              <span class="skill-pill">Prisma ORM</span>
+              <span class="skill-pill">MySQL</span>
+              <span class="skill-pill">Amazon S3</span>
+              <span class="skill-pill">Database Indexing</span>
+              <span class="skill-pill">Data Modeling</span>
+            </div>
+          </div>
+
+          <!-- Category: DevOps & Tooling -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <h3>DevOps & Tooling</h3>
+            </div>
+            <div class="skills-tags-wrap">
+              <span class="skill-pill">Git & GitHub</span>
+              <span class="skill-pill">Docker</span>
+              <span class="skill-pill">AWS Services</span>
+              <span class="skill-pill">CI/CD Pipelines</span>
+              <span class="skill-pill">Linux / Bash</span>
+              <span class="skill-pill">Jest / Unit Tests</span>
+              <span class="skill-pill">Postman</span>
+              <span class="skill-pill">Nginx</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURED PROJECTS SECTION
+         ========================================================================== -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world applications built with an emphasis on clean architecture, performance, and clean code.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+          <button class="filter-btn" data-filter="backend">Backend & Cloud</button>
+          <button class="filter-btn" data-filter="frontend">Frontend & UI</button>
+        </div>
+
+        <!-- Dynamic Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Populated by JavaScript from projects-data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EXPERIENCE & EDUCATION TIMELINE
+         ========================================================================== -->
+    <section id="experience" style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career Journey</span>
+          <h2 class="section-title">Work Experience & Education</h2>
+          <p class="section-subtitle">My professional track record building scalable web products and collaborating with agile engineering teams.</p>
+        </div>
+
+        <div class="timeline-wrap">
+          
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Senior Full-Stack Developer</h3>
+                <span class="timeline-date">2024 — Present</span>
+              </div>
+              <div class="timeline-company">Nexus Cloud Systems • Full-Time</div>
+              <ul class="timeline-bullets">
+                <li>Architected distributed microservices powering enterprise analytics, handling over 2M requests daily with 99.98% uptime.</li>
+                <li>Migrated monolithic services to Next.js and containerized Node.js services, slashing page load times by 45%.</li>
+                <li>Mentored junior software engineers, implemented automated CI/CD linting & testing suites, improving deployment safety.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Full-Stack Software Engineer</h3>
+                <span class="timeline-date">2022 — 2024</span>
+              </div>
+              <div class="timeline-company">Elevate Digital Labs • Full-Time</div>
+              <ul class="timeline-bullets">
+                <li>Engineered responsive web applications and REST APIs utilizing React, TypeScript, Node.js, and PostgreSQL.</li>
+                <li>Integrated third-party payment gateways (Stripe, PayPal) with resilient webhook retry algorithms and atomic transactions.</li>
+                <li>Collaborated closely with product designers to implement WCAG 2.1 AA accessible design systems.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Junior Frontend Engineer</h3>
+                <span class="timeline-date">2021 — 2022</span>
+              </div>
+              <div class="timeline-company">Apex Web Solutions • Full-Time</div>
+              <ul class="timeline-bullets">
+                <li>Developed high-conversion landing pages, dashboards, and internal workflow tools using modern JavaScript and CSS.</li>
+                <li>Reduced bundle sizes by 30% through code splitting, tree shaking, and modern image optimization pipelines.</li>
+                <li>Wrote unit and integration tests with Jest and React Testing Library, maintaining 85%+ coverage.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4 (Education) -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-role">B.S. in Computer Science & Engineering</h3>
+                <span class="timeline-date">2017 — 2021</span>
+              </div>
+              <div class="timeline-company">University Department of Computer Science • Graduated with Honors</div>
+              <ul class="timeline-bullets">
+                <li>Key Coursework: Data Structures & Algorithms, Distributed Systems, Database Management Systems, Software Engineering, Computer Networks.</li>
+                <li>Final Year Capstone: Real-time collaborative code editor with operational transformation (OT) and WebSockets.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION
+         ========================================================================== -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-subtitle">Have an exciting project, full-time opportunity, or technical question? My inbox is always open.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Column -->
+          <div class="contact-info-wrap">
+            
+            <div class="contact-info-card">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-meta">
+                <h4>Email Address</h4>
+                <a href="mailto:sanjai.developer@example.com">sanjai.developer@example.com</a>
+              </div>
+              <button class="copy-btn" id="copy-email-btn" data-email="sanjai.developer@example.com" title="Copy email address">
+                <svg viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>Copy</span>
+              </button>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="contact-meta">
+                <h4>Current Location</h4>
+                <p>Available for Remote Worldwide</p>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </div>
+              <div class="contact-meta">
+                <h4>LinkedIn Profile</h4>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">linkedin.com/in/sanjai</a>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </div>
+              <div class="contact-meta">
+                <h4>GitHub Profile</h4>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com/sanjai</a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-wrap">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div id="form-status" class="form-status"></div>
+
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name *</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Alex Johnson" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="alex@company.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="Project Inquiry / Job Opportunity" />
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Your Message *</label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project, timeline, or any questions..." required></textarea>
+              </div>
+
+              <button type="submit" id="form-submit-btn" class="btn btn-primary" style="width: 100%;">
+                <span>Send Message</span>
+                <svg class="btn-icon" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo">
+          <div class="brand-icon">S</div>
+          <span>Sanjai<span class="gradient-text">.dev</span></span>
+        </a>
+        <p>© 2026 Sanjai. Designed & engineered with clean code and care.</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub">
+          <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <button id="back-to-top" class="back-to-top-btn" title="Back to top" aria-label="Back to top" style="opacity: 0; pointer-events: none;">
+          <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       CASE STUDY / PROJECT DETAILS MODAL
+       ========================================================================== -->
+  <div id="project-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <button id="modal-close" class="modal-close-btn" aria-label="Close project modal">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-inner" id="modal-body-content">
+        <!-- Injected via main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/projects-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
